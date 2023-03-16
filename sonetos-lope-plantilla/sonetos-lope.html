@@ -1,87 +1,200 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <title>Sin título. Escriba su nombre</title>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sin título. Escriba su nombre</title>
+    <style>
+      body {
+        margin: 0;
+        background-image: url("./fondos/corazon-1.svg"),
+          url("./fondos/corazon-2.svg");
+        background-repeat: repeat-y;
+        background-position: top left, top right;
+        background-size: 150px, 150px;
+      }
 
-<body>
-  Sonetos de amor de Lope de Vega (1562 - 1635)
+      h1 {
+        font-size: 32px;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+      }
 
-  Ya no quiero más bien que sólo amaros,
-  ni más vida, Lucinda, que ofreceros
-  la que me dais, cuando merezco veros,
-  ni ver más luz que vuestros ojos claros.
+      p {
+        font-size: 20px;
+        font-family: sans-serif;
+        margin-left: 30%;
+        margin-right: 30%;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+      }
 
-  Para vivir me basta desearos,
-  para ser venturoso, conoceros;
-  para admirar el mundo, engrandeceros,
-  y para ser Eróstrato, abrasaros.
+      .container {
+        display: flex;
+      }
 
-  La pluma y lengua, respondiendo a coros,
-  quieren al cielo espléndido subiros,
-  donde están los espíritus más puros;
+      .cajaSoneto1 {
+        background-image: url("fondos/manchas.png");
+        padding: 1vw;
+        border: 3px solid black;
+      }
 
-  que entre tales riquezas y tesoros,
-  mis lágrimas, mis versos, mis suspiros
-  de olvido y tiempo vivirán seguros.
+      .cajaSoneto2 {
+        margin-top: clamp(16px, 1vw, 32px);
+        background-image: url("./fondos/tallos.jpg");
+        padding: 1vw;
+        border: 3px solid black;
+        position: relative;
+      }
 
+      .cajaSoneto2 p {
+        color: #ffdd00;
+      }
 
-  Ir y quedarse, y con quedar partirse,
-  partir sin alma, y ir con alma ajena,
-  oír la dulce voz de una sirena
-  y no poder del árbol desasirse;
+      .cajaSoneto3 {
+        background-image: url("fondos/ojo.svg") , url("fondos/hexagonos.jpg");
+        background-repeat: no-repeat, repeat;
+        background-position: center;
 
-  arder como la vela y consumirse
-  haciendo torres sobre tierna arena;
-  caer de un cielo, y ser demonio en pena,
-  y de serlo jamás arrepentirse;
+        padding: 1vw;
+        border: 3px solid black;
+        margin-top: clamp(16px, 1vw, 32px);
+      }
 
-  hablar entre las mudas soledades,
-  pedir prestada, sobre fe, paciencia,
-  y lo que es temporal llamar eterno;
+      .cajaSoneto3 p {
+        color: #841300;
+      }
 
-  creer sospechas y negar verdades,
-  es lo que llaman en el mundo ausencia,
-  fuego en el alma y en la vida infierno.
+      .cajaSoneto4 {
+        background: url("fondos/caballo.svg") repeat-x bottom, url("fondos/estrellas.png") repeat;
+        background-size: 8vw, auto;
+        border: 3px solid black;
+        margin-top: clamp(16px, 1vw, 32px);
+        margin-bottom: clamp(16px, 1vw, 32px);
 
+      }
 
-  Perderá de los cielos la belleza
-  el ordinario curso, eterno y fuerte;
-  la confusión, que todo lo pervierte,
-  dará a las cosas su primer rudeza.
+      .cajaSoneto4 p {
+        color: #004d06;
+      }
 
-  Juntaránse el descanso y la pobreza;
-  será el alma inmortal sujeta a muerte;
-  hará los rostros todos de una suerte,
-  la hermosa, en variar, naturaleza.
+      .cajaSoneto4 p:last-of-type {
+        margin-bottom: 5vw;
+      }
 
-  Los humores del hombre, reducidos
-  a un mismo fin, se abrazarán concordes;
-  dará la noche luz y el oro enojos.
+      .cajaSoneto1,
+      .cajaSoneto2,
+      .cajaSoneto3,
+      .cajaSoneto4 {
+        margin-left: 12vw;
+        margin-right: 12vw;
+      }
 
-  Y quedarán en paz eterna unidos
-  los elementos, hasta aquí discordes,
-  antes de que deje de adorar tus ojos.
+      .llama1,
+      .llama2 {
+        position: absolute;
+      }
 
+      .llama1 {
+        bottom: 0;
+        left: 0;
+      }
 
-  Desmayarse, atreverse, estar furioso,
-  áspero, tierno, liberal, esquivo,
-  alentado, mortal, difunto, vivo,
-  leal, traidor, cobarde y animoso;
+      .llama2 {
+        right: 0;
+        bottom: 0;
+      }
+    </style>
+  </head>
 
-  no hallar fuera del bien centro y reposo,
-  mostrarse alegre, triste, humilde, altivo,
-  enojado, valiente, fugitivo,
-  satisfecho, ofendido, receloso;
+  <body>
+    <div class="container">
+      <div class="soneto">
+        <h1>Sonetos de amor de Lope de Vega (1562 - 1635)</h1>
+        <div class="cajaSoneto1">
+          <p>
+            Ya no quiero más bien que sólo amaros, ni más vida, Lucinda, que
+            ofreceros la que me dais, cuando merezco veros, ni ver más luz que
+            vuestros ojos claros.
+          </p>
+          <p>
+            Para vivir me basta desearos, para ser venturoso, conoceros; para
+            admirar el mundo, engrandeceros, y para ser Eróstrato, abrasaros.
+          </p>
+          <p>
+            La pluma y lengua, respondiendo a coros, quieren al cielo espléndido
+            subiros, donde están los espíritus más puros;
+          </p>
+          <p>
+            que entre tales riquezas y tesoros, mis lágrimas, mis versos, mis
+            suspiros de olvido y tiempo vivirán seguros.
+          </p>
+        </div>
+        <div class="cajaSoneto2">
+          <img class="llama1" src="./fondos/fuego.svg" alt="fuego" />
+          <img class="llama2" src="./fondos/fuego.svg" alt="fuego" />
+          <p>
+            Ir y quedarse, y con quedar partirse, partir sin alma, y ir con alma
+            ajena, oír la dulce voz de una sirena y no poder del árbol
+            desasirse;
+          </p>
+          <p>
+            arder como la vela y consumirse haciendo torres sobre tierna arena;
+            caer de un cielo, y ser demonio en pena, y de serlo jamás
+            arrepentirse;
+          </p>
+          <p>
+            hablar entre las mudas soledades, pedir prestada, sobre fe,
+            paciencia, y lo que es temporal llamar eterno;
+          </p>
+          <p>
+            creer sospechas y negar verdades, es lo que llaman en el mundo
+            ausencia, fuego en el alma y en la vida infierno.
+          </p>
+        </div>
+        <div class="cajaSoneto3">
+          <p>
+            Perderá de los cielos la belleza el ordinario curso, eterno y
+            fuerte; la confusión, que todo lo pervierte, dará a las cosas su
+            primer rudeza.
+          </p>
+          <p>
+            Juntaránse el descanso y la pobreza; será el alma inmortal sujeta a
+            muerte; hará los rostros todos de una suerte, la hermosa, en variar,
+            naturaleza.
+          </p>
+          <p>
+            Los humores del hombre, reducidos a un mismo fin, se abrazarán
+            concordes; dará la noche luz y el oro enojos.
+          </p>
+          <p>
+            Y quedarán en paz eterna unidos los elementos, hasta aquí discordes,
+            antes de que deje de adorar tus ojos.
+          </p>
+        </div>
 
-  huir el rostro al claro desengaño,
-  beber veneno por licor suave,
-  olvidar el provecho, amar el daño;
-
-  creer que un cielo en un infierno cabe,
-  dar la vida y el alma a un desengaño;
-  esto es amor, quien lo probó lo sabe.
-
-</body>
+        <div class="cajaSoneto4">
+          <p>
+            Desmayarse, atreverse, estar furioso, áspero, tierno, liberal,
+            esquivo, alentado, mortal, difunto, vivo, leal, traidor, cobarde y
+            animoso;
+          </p>
+          <p>
+            no hallar fuera del bien centro y reposo, mostrarse alegre, triste,
+            humilde, altivo, enojado, valiente, fugitivo, satisfecho, ofendido,
+            receloso;
+          </p>
+          <p>
+            huir el rostro al claro desengaño, beber veneno por licor suave,
+            olvidar el provecho, amar el daño;
+          </p>
+          <p>
+            creer que un cielo en un infierno cabe, dar la vida y el alma a un
+            desengaño; esto es amor, quien lo probó lo sabe.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
