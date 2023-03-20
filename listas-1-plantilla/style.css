@@ -1,46 +1,122 @@
 @font-face {
-	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-p8na1r');
-	src:url('fonts/icomoon.eot?#iefix-p8na1r') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-p8na1r') format('woff'),
-		url('fonts/icomoon.ttf?-p8na1r') format('truetype'),
-		url('fonts/icomoon.svg?-p8na1r#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?-p8na1r");
+  src: url("fonts/icomoon.eot?#iefix-p8na1r") format("embedded-opentype"),
+    url("fonts/icomoon.woff?-p8na1r") format("woff"),
+    url("fonts/icomoon.ttf?-p8na1r") format("truetype"),
+    url("fonts/icomoon.svg?-p8na1r#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "icomoon";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-home:before {
-	content: "\e900";
+  content: "\e900";
 }
 .icon-pencil:before {
-	content: "\e905";
+  content: "\e905";
 }
 .icon-file-text:before {
-	content: "\e922";
+  content: "\e922";
 }
 .icon-search:before {
-	content: "\e986";
+  content: "\e986";
 }
 .icon-switch:before {
-	content: "\e9b6";
+  content: "\e9b6";
 }
 .icon-plus:before {
-	content: "\ea0a";
+  content: "\ea0a";
 }
 .icon-minus:before {
-	content: "\ea0b";
+  content: "\ea0b";
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(209, 209, 209);
+}
+
+.list1 li {
+  display: inline-block;
+  background-color: #5ace77;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: 5px #954a95 dashed;
+}
+
+.container2 {
+  text-align: center;
+}
+
+.list2 {
+  text-align: center;
+}
+
+.list2 li {
+  display: inline-block;
+  padding: 15px;
+  border: 2px white solid;
+  border-color: white black black white;
+  background-color: white;
+}
+
+.list2 li:hover {
+  border-color: rgb(0, 0, 0) rgb(255, 255, 255) rgb(255, 255, 255) rgb(0, 0, 0);
+  background-color: rgb(186, 186, 186);
+}
+
+.list3 {
+  background-color: darkgray;
+  width: 15%;
+  border: 1px black solid;
+  padding-right: 30px;
+}
+
+.list3 li {
+  background-color: azure;
+  border: 1px black solid;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  list-style: none;
+  text-align: center;
+  padding: 10px;
+}
+
+.container4 {
+  text-align: center;
+}
+
+.list4 li {
+  display: inline-block;
+  width: 9vw;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.list4 li:nth-child(even) {
+  background-color: #3366cc;
+  color: white;
+}
+
+.list4 li:nth-child(odd) {
+  background-color: white;
+  color: #3366cc;
 }
